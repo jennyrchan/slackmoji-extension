@@ -1,0 +1,36 @@
+{
+  "manifest_version": 2,
+  "name": "Custom Emoji Extension",
+  "version": "1.0",
+
+  "description": "Add and view your own custom emojis across webpages",
+  "icons": {
+    "128": "../icon128.png"
+  },
+
+  "browser_action": {
+    "default_title": "Add an emoji!",
+    "default_icon": "../icon128.png",
+    "default_popup": "popup.html"
+  },
+
+  "permissions": [
+    "tabs",
+    "storage"
+  ],
+
+  "background": {
+    "scripts": ["event.js"],
+    "persistent": true
+  },
+
+  "content_scripts": [
+    {
+      "matches": ["*://*/*"],
+      "js": ["content.js"]
+      // These are the default options already
+      // "run_at": "document_idle" (maybe document_end to speed up website loading?)
+      // "all_frames": false
+    }
+  ]
+}
