@@ -6,18 +6,18 @@ class App extends Component {
     super(props);
   }
 
-  componentDidMount() {
-    document.addEventListener('click', () => {
-      this.props.dispatch({
-        type: 'ADD_COUNT'
-      });
-    });
-  }
+  // componentDidMount() {
+  //   document.addEventListener('click', () => {
+  //     this.props.dispatch({
+  //       type: 'ADD_COUNT'
+  //     });
+  //   });
+  // }
 
   render() {
     return (
       <div>
-        Count: {this.props.count}
+        Count Count Count
       </div>
     );
   }
@@ -25,7 +25,7 @@ class App extends Component {
 
 const mapStateToProps = (state) => {
   return {
-    count: state.count
+    // count: state.count
   };
 };
 

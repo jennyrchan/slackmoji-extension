@@ -13,8 +13,8 @@ Add and view your own custom emoji across webpages
 - Delete old emojis
 - Search bar for emoji
 - Options popup that allows you to standardize emojis (choose from Apple, Google, Facebook, EmojiOne)
-- Clear database after 30ish days to make the app more optimal for more users
+- Clear database after ~30 days to optimize extension for more users
 
 ## Challenges
 - Getting it to work for Gmail (extension doesn't search through the DOM -- why???)
-- Getting it work as you continue scrolling (i.e., for Facebook news feed)
+- Getting it to work as you continue scrolling (i.e., for Facebook news feed)
