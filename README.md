@@ -18,3 +18,5 @@ Add and view your own custom emoji across webpages
 ## Challenges
 - Getting it to work for Gmail (extension doesn't search through the DOM -- why???)
 - Getting it to work as you continue scrolling (i.e., for Facebook news feed)
+
+Emojis obtained from https://slackmojis.com/ and Fullstack Academy's Slack channels

@@ -69,10 +69,12 @@
 
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-	var proxyStore = new _reactChromeRedux.Store({ portName: 'example' });
+	var proxyStore = new _reactChromeRedux.Store({
+	  portName: 'emoji'
+	});
 
 	var anchor = document.createElement('div');
-	anchor.id = 'rcr-anchor';
+	anchor.id = 'anchor';
 
 	document.body.insertBefore(anchor, document.body.childNodes[0]);
 
@@ -80,7 +82,7 @@
 	  _reactRedux.Provider,
 	  { store: proxyStore },
 	  _react2.default.createElement(_App2.default, null)
-	), document.getElementById('rcr-anchor'));
+	), document.getElementById('anchor'));
 
 /***/ },
 /* 2 */

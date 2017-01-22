@@ -6,5 +6,5 @@ import {wrapStore} from 'react-chrome-redux';
 const store = createStore(rootReducer, {});
 
 wrapStore(store, {
-  portName: 'example'
+  portName: 'emoji'
 });

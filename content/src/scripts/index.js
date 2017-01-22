@@ -5,10 +5,12 @@ import {Store} from 'react-chrome-redux';
 
 import App from './components/app/App';
 
-const proxyStore = new Store({portName: 'example'});
+const proxyStore = new Store({
+  portName: 'emoji'
+});
 
 const anchor = document.createElement('div');
-anchor.id = 'rcr-anchor';
+anchor.id = 'anchor';
 
 document.body.insertBefore(anchor, document.body.childNodes[0]);
 
@@ -16,4 +18,4 @@ render(
   <Provider store={proxyStore}>
     <App />
   </Provider>
-  , document.getElementById('rcr-anchor'));
+  , document.getElementById('anchor'));

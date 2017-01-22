@@ -66,7 +66,7 @@
 	var store = (0, _redux.createStore)(_reducers2.default, {});
 
 	(0, _reactChromeRedux.wrapStore)(store, {
-	  portName: 'example'
+	  portName: 'emoji'
 	});
 
 /***/ },
