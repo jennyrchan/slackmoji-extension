@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
 import {connect} from 'react-redux';
-import slackmojis from './slackmojis';
-import Slackmoji from './Slackmoji';
+import emojis from './emojis';
+import Emoji from './Emoji';
 
 class App extends Component {
   constructor(props) {
@@ -10,9 +10,9 @@ class App extends Component {
     this.copyToClipboard = this.copyToClipboard.bind(this);
   }
 
-  copyToClipboard(slackmoji) {
+  copyToClipboard(emoji) {
     const textField = document.createElement('textarea');
-    textField.innerText = slackmoji.name;
+    textField.innerText = emoji.name;
     document.body.appendChild(textField);
     textField.select();
     document.execCommand('copy');
@@ -30,9 +30,9 @@ class App extends Component {
         <div className="container-fluid">
           <div className="row">
             {
-              slackmojis.map(slackmoji => (
-                <div className="col-xs-3 emoji-container" key={slackmoji.id}>
-                  <Slackmoji slackmoji={slackmoji} handleClick={this.copyToClipboard} />
+              emojis.map(emoji => (
+                <div className="col-xs-3 emoji-container" key={emoji.id}>
+                  <Emoji emoji={emoji} handleClick={this.copyToClipboard} />
                 </div>
               ))
             }

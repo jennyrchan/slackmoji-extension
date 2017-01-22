@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 import {connect} from 'react-redux';
-import slackmojis from './slackmojis';
+import emojis from './emojis';
 
 class App extends Component {
   constructor(props) {
@@ -8,7 +8,7 @@ class App extends Component {
   }
 
   componentDidMount() {
-    slackmojis.forEach(slackmoji => convertToEmoji(slackmoji.name, slackmoji.image));
+    emojis.forEach(emoji => convertToEmoji(emoji.name, emoji.image));
 
     function convertToEmoji (shortName, image) {
       const emoji = `<img src=${image} width='32' height='32'>`

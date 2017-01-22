@@ -28,9 +28,6 @@
     {
       "matches": ["*://*/*"],
       "js": ["content.js"]
-      // These are the default options already
-      // "run_at": "document_idle" (maybe document_end to speed up website loading?)
-      // "all_frames": false
     }
   ]
 }

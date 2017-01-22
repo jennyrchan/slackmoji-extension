@@ -11,5 +11,7 @@ const proxyStore = new Store({
 });
 
 render(
-    <Provider store={proxyStore}><App /></Provider>
+    <Provider store={proxyStore}>
+      <App />
+    </Provider>
   , document.getElementById('app'));

@@ -67,10 +67,6 @@
 
 	var _App2 = _interopRequireDefault(_App);
 
-	var _slackmojis = __webpack_require__(257);
-
-	var _slackmojis2 = _interopRequireDefault(_slackmojis);
-
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 	var proxyStore = new _reactChromeRedux.Store({ portName: 'example' });
@@ -80,29 +76,10 @@
 
 	document.body.insertBefore(anchor, document.body.childNodes[0]);
 
-	var onAppEnter = function onAppEnter() {
-	  console.log('APP ENTERED', _slackmojis2.default);
-	  _slackmojis2.default.forEach(function (slackmoji) {
-	    return convertToEmoji(slackmoji.name, slackmoji.image);
-	  });
-
-	  function convertToEmoji(shortName, image) {
-	    var emoji = '<img src=' + image + ' width=\'32\' height=\'32\'>';
-	    var page = document.body.innerHTML;
-
-	    while (page.indexOf(shortName) >= 0) {
-	      var i = page.indexOf(shortName);
-	      var j = shortName.length;
-	      page = page.substr(0, i) + emoji + page.substr(i + j);
-	      document.body.innerHTML = page;
-	    }
-	  }
-	};
-
 	(0, _reactDom.render)(_react2.default.createElement(
 	  _reactRedux.Provider,
 	  { store: proxyStore },
-	  _react2.default.createElement(_App2.default, { onEnter: onAppEnter })
+	  _react2.default.createElement(_App2.default, null)
 	), document.getElementById('rcr-anchor'));
 
 /***/ },
@@ -25014,9 +24991,9 @@
 
 	var _reactRedux = __webpack_require__(179);
 
-	var _slackmojis = __webpack_require__(257);
+	var _emojis = __webpack_require__(257);
 
-	var _slackmojis2 = _interopRequireDefault(_slackmojis);
+	var _emojis2 = _interopRequireDefault(_emojis);
 
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -25038,8 +25015,8 @@
 	  _createClass(App, [{
 	    key: 'componentDidMount',
 	    value: function componentDidMount() {
-	      _slackmojis2.default.forEach(function (slackmoji) {
-	        return convertToEmoji(slackmoji.name, slackmoji.image);
+	      _emojis2.default.forEach(function (emoji) {
+	        return convertToEmoji(emoji.name, emoji.image);
 	      });
 
 	      function convertToEmoji(shortName, image) {
@@ -25077,7 +25054,7 @@
 	Object.defineProperty(exports, "__esModule", {
 	  value: true
 	});
-	var slackmojis = [{
+	var emojis = [{
 	  id: 1,
 	  name: ':all_the_things:',
 	  image: 'https://emojis.slackmojis.com/emojis/images/1450319440/23/all_the_things.jpg?1450319440'
@@ -25179,7 +25156,7 @@
 	  image: 'https://emoji.slack-edge.com/T024FPYBQ/react/532b8888d17bda2e.png'
 	}];
 
-	exports.default = slackmojis;
+	exports.default = emojis;
 
 /***/ }
 /******/ ]);

@@ -21531,13 +21531,13 @@
 
 	var _reactRedux = __webpack_require__(180);
 
-	var _slackmojis = __webpack_require__(210);
+	var _emojis = __webpack_require__(210);
 
-	var _slackmojis2 = _interopRequireDefault(_slackmojis);
+	var _emojis2 = _interopRequireDefault(_emojis);
 
-	var _Slackmoji = __webpack_require__(211);
+	var _Emoji = __webpack_require__(211);
 
-	var _Slackmoji2 = _interopRequireDefault(_Slackmoji);
+	var _Emoji2 = _interopRequireDefault(_Emoji);
 
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -21562,9 +21562,9 @@
 
 	  _createClass(App, [{
 	    key: 'copyToClipboard',
-	    value: function copyToClipboard(slackmoji) {
+	    value: function copyToClipboard(emoji) {
 	      var textField = document.createElement('textarea');
-	      textField.innerText = slackmoji.name;
+	      textField.innerText = emoji.name;
 	      document.body.appendChild(textField);
 	      textField.select();
 	      document.execCommand('copy');
@@ -21595,11 +21595,11 @@
 	          _react2.default.createElement(
 	            'div',
 	            { className: 'row' },
-	            _slackmojis2.default.map(function (slackmoji) {
+	            _emojis2.default.map(function (emoji) {
 	              return _react2.default.createElement(
 	                'div',
-	                { className: 'col-xs-3 emoji-container', key: slackmoji.id },
-	                _react2.default.createElement(_Slackmoji2.default, { slackmoji: slackmoji, handleClick: _this2.copyToClipboard })
+	                { className: 'col-xs-3 emoji-container', key: emoji.id },
+	                _react2.default.createElement(_Emoji2.default, { emoji: emoji, handleClick: _this2.copyToClipboard })
 	              );
 	            })
 	          ),
@@ -23384,7 +23384,7 @@
 	Object.defineProperty(exports, "__esModule", {
 	  value: true
 	});
-	var slackmojis = [{
+	var emojis = [{
 	  id: 1,
 	  name: ':all_the_things:',
 	  image: 'https://emojis.slackmojis.com/emojis/images/1450319440/23/all_the_things.jpg?1450319440'
@@ -23486,7 +23486,7 @@
 	  image: 'https://emoji.slack-edge.com/T024FPYBQ/react/532b8888d17bda2e.png'
 	}];
 
-	exports.default = slackmojis;
+	exports.default = emojis;
 
 /***/ },
 /* 211 */
@@ -23504,20 +23504,20 @@
 
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-	function Slackmoji(props) {
+	function Emoji(props) {
 
-	  var slackmoji = props.slackmoji;
+	  var emoji = props.emoji;
 
 	  return _react2.default.createElement(
 	    "a",
 	    { href: "#", onClick: function onClick() {
-	        return props.handleClick(slackmoji);
+	        return props.handleClick(emoji);
 	      } },
-	    _react2.default.createElement("img", { src: slackmoji.image, width: "48", height: "48" })
+	    _react2.default.createElement("img", { src: emoji.image, width: "48", height: "48" })
 	  );
 	}
 
-	exports.default = Slackmoji;
+	exports.default = Emoji;
 
 /***/ },
 /* 212 */

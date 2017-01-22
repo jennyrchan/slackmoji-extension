@@ -1,4 +1,4 @@
-const slackmojis = [{
+const emojis = [{
   id: 1,
   name: ':all_the_things:',
   image: 'https://emojis.slackmojis.com/emojis/images/1450319440/23/all_the_things.jpg?1450319440'
@@ -100,4 +100,4 @@ const slackmojis = [{
   image: 'https://emoji.slack-edge.com/T024FPYBQ/react/532b8888d17bda2e.png'
 }];
 
-export default slackmojis;
+export default emojis;
