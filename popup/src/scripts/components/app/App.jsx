@@ -23,23 +23,27 @@ class App extends Component {
 
   render() {
     return (
-      <div className="container-fluid" width="1000">
-        <h1>Your Favorite Slackmojis</h1>
-        <div className="row">
-          {
-            slackmojis.map(slackmoji => (
-              <div className="col-xs-3" key={slackmoji.id}>
-                <Slackmoji slackmoji={slackmoji} handleClick={this.copyToClipboard} />
-              </div>
-            ))
-          }
-        </div>
-        <div className="row">
-          {
-            this.state.copied
-            ? <h4>Copied!</h4>
-            : null
-          }
+      <div>
+        <header>
+          <h3>Click to add an emoji!</h3>
+        </header>
+        <div className="container-fluid">
+          <div className="row">
+            {
+              slackmojis.map(slackmoji => (
+                <div className="col-xs-3 emoji-container" key={slackmoji.id}>
+                  <Slackmoji slackmoji={slackmoji} handleClick={this.copyToClipboard} />
+                </div>
+              ))
+            }
+          </div>
+          <div className="row">
+            {
+              this.state.copied
+              ? <div id="copied"><h4>Copied!</h4></div>
+              : null
+            }
+          </div>
         </div>
       </div>
     );

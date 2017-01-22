@@ -21579,31 +21579,43 @@
 
 	      return _react2.default.createElement(
 	        'div',
-	        { className: 'container-fluid', width: '1000' },
+	        null,
 	        _react2.default.createElement(
-	          'h1',
+	          'header',
 	          null,
-	          'Your Favorite Slackmojis'
-	        ),
-	        _react2.default.createElement(
-	          'div',
-	          { className: 'row' },
-	          _slackmojis2.default.map(function (slackmoji) {
-	            return _react2.default.createElement(
-	              'div',
-	              { className: 'col-xs-3', key: slackmoji.id },
-	              _react2.default.createElement(_Slackmoji2.default, { slackmoji: slackmoji, handleClick: _this2.copyToClipboard })
-	            );
-	          })
-	        ),
-	        _react2.default.createElement(
-	          'div',
-	          { className: 'row' },
-	          this.state.copied ? _react2.default.createElement(
-	            'h4',
+	          _react2.default.createElement(
+	            'h3',
 	            null,
-	            'Copied!'
-	          ) : null
+	            'Click to add an emoji!'
+	          )
+	        ),
+	        _react2.default.createElement(
+	          'div',
+	          { className: 'container-fluid' },
+	          _react2.default.createElement(
+	            'div',
+	            { className: 'row' },
+	            _slackmojis2.default.map(function (slackmoji) {
+	              return _react2.default.createElement(
+	                'div',
+	                { className: 'col-xs-3 emoji-container', key: slackmoji.id },
+	                _react2.default.createElement(_Slackmoji2.default, { slackmoji: slackmoji, handleClick: _this2.copyToClipboard })
+	              );
+	            })
+	          ),
+	          _react2.default.createElement(
+	            'div',
+	            { className: 'row' },
+	            this.state.copied ? _react2.default.createElement(
+	              'div',
+	              { id: 'copied' },
+	              _react2.default.createElement(
+	                'h4',
+	                null,
+	                'Copied!'
+	              )
+	            ) : null
+	          )
 	        )
 	      );
 	    }
