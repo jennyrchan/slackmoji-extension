@@ -8,23 +8,23 @@ class App extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      // copied: false,
+      copied: false,
       inputValue: ''
     };
-    // this.copyToClipboard = this.copyToClipboard.bind(this);
+    this.copyToClipboard = this.copyToClipboard.bind(this);
     this.handleChange = this.handleChange.bind(this);
   }
 
-  // copyToClipboard(emoji) {
-  //   const textField = document.createElement('textarea');
-  //   textField.innerText = emoji.name;
-  //   document.body.appendChild(textField);
-  //   textField.select();
-  //   document.execCommand('copy');
-  //   textField.remove();
+  copyToClipboard(emoji) {
+    const textField = document.createElement('textarea');
+    textField.innerText = emoji.name;
+    document.body.appendChild(textField);
+    textField.select();
+    document.execCommand('copy');
+    textField.remove();
 
-  //   this.setState({ copied: true });
-  // }
+    this.setState({ copied: true });
+  }
 
   handleChange(event) {
     const inputValue = event.target.value;
@@ -33,7 +33,7 @@ class App extends Component {
 
   render() {
 
-    const { inputValue } = this.state;
+    const { copied, inputValue } = this.state;
     const filteredEmojis = emojiData.filter(emoji => emoji.name.match(inputValue));
 
     return (
@@ -43,7 +43,12 @@ class App extends Component {
         </header>
         <div className="container-fluid">
           <FilterInput handleChange={this.handleChange} inputValue={inputValue} />
-          <Emojis emojis={filteredEmojis} />
+          <div className="row">
+            { copied
+              ? <div id="copied"><h4>Copied!</h4></div>
+              : null }
+          </div>
+          <Emojis emojis={filteredEmojis} handleClick={this.copyToClipboard} />
         </div>
       </div>
     );

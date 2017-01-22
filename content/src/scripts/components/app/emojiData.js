@@ -92,10 +92,22 @@ const emojis = [{
   image: 'https://emoji.slack-edge.com/T024FPYBQ/biblethump/ca18fd3f2a3ccafb.png'
 }, {
   id: 24,
+  name: ':bubba:',
+  image: 'https://emoji.slack-edge.com/T024FPYBQ/bubba/44c55e953b854e7f.png'
+}, {
+  id: 25,
+  name: ':dinostomp:',
+  image: 'https://emoji.slack-edge.com/T024FPYBQ/dinostomp/9ccd7ddd8a06a63c.gif'
+}, {
+  id: 26,
+  name: ':fullstack:',
+  image: 'https://emoji.slack-edge.com/T024FPYBQ/fullstack/04f411012b2a0ec8.png'
+}, {
+  id: 27,
   name: ':github:',
   image: 'https://emoji.slack-edge.com/T024FPYBQ/github/14e2efc7ae34986e.png'
 }, {
-  id: 25,
+  id: 28,
   name: ':react:',
   image: 'https://emoji.slack-edge.com/T024FPYBQ/react/532b8888d17bda2e.png'
 }];

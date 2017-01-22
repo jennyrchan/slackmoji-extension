@@ -11,7 +11,16 @@ header, #copied {
   text-align: center;
 }
 
+.emoji-container {
+  padding: 10px;
+}
+
 .emoji-container:hover {
   background-color: rgba(200, 200, 200, 1);
   border-radius: 15px;
+}
+
+img {
+  display: block;
+  margin: auto;
 }

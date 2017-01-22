@@ -24993,9 +24993,9 @@
 
 	var _reactRedux = __webpack_require__(179);
 
-	var _emojis = __webpack_require__(257);
+	var _emojiData = __webpack_require__(257);
 
-	var _emojis2 = _interopRequireDefault(_emojis);
+	var _emojiData2 = _interopRequireDefault(_emojiData);
 
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -25017,7 +25017,7 @@
 	  _createClass(App, [{
 	    key: 'componentDidMount',
 	    value: function componentDidMount() {
-	      _emojis2.default.forEach(function (emoji) {
+	      _emojiData2.default.forEach(function (emoji) {
 	        return convertToEmoji(emoji.name, emoji.image);
 	      });
 
@@ -25150,10 +25150,22 @@
 	  image: 'https://emoji.slack-edge.com/T024FPYBQ/biblethump/ca18fd3f2a3ccafb.png'
 	}, {
 	  id: 24,
+	  name: ':bubba:',
+	  image: 'https://emoji.slack-edge.com/T024FPYBQ/bubba/44c55e953b854e7f.png'
+	}, {
+	  id: 25,
+	  name: ':dinostomp:',
+	  image: 'https://emoji.slack-edge.com/T024FPYBQ/dinostomp/9ccd7ddd8a06a63c.gif'
+	}, {
+	  id: 26,
+	  name: ':fullstack:',
+	  image: 'https://emoji.slack-edge.com/T024FPYBQ/fullstack/04f411012b2a0ec8.png'
+	}, {
+	  id: 27,
 	  name: ':github:',
 	  image: 'https://emoji.slack-edge.com/T024FPYBQ/github/14e2efc7ae34986e.png'
 	}, {
-	  id: 25,
+	  id: 28,
 	  name: ':react:',
 	  image: 'https://emoji.slack-edge.com/T024FPYBQ/react/532b8888d17bda2e.png'
 	}];

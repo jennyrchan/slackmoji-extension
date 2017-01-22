@@ -2,17 +2,16 @@ import React from 'react';
 
 function FilterInput (props) {
 
-  const handleChange = props.handleChange;
-  const inputValue = props.inputValue;
+  const { handleChange, inputValue } = props;
 
   return (
     <form className="form-group">
-      <input
-        onChange={handleChange}
-        value={inputValue}
-        className="form-control"
-        placeholder="Search"
-      />
+        <input
+          onChange={handleChange}
+          value={inputValue}
+          className="form-control"
+          placeholder="Search"
+        />
     </form>
   );
 
