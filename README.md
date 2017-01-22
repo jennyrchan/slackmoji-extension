@@ -1,6 +1,6 @@
-# custom-emoji-extension
+# slackmoji-extension
 
-Add and view your own custom emoji across webpages
+A Google Chrome extension that allows you to view and input your favorite emojis from Slack
 
 ## Goal
 
