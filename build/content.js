@@ -25168,6 +25168,54 @@
 	  id: 28,
 	  name: ':react:',
 	  image: 'https://emoji.slack-edge.com/T024FPYBQ/react/532b8888d17bda2e.png'
+	}, {
+	  id: 29,
+	  name: ':zombie:',
+	  image: 'https://emojis.slackmojis.com/emojis/images/1466718697/581/zombie.gif?1466718697'
+	}, {
+	  id: 30,
+	  name: ':carlton:',
+	  image: 'https://emojis.slackmojis.com/emojis/images/1450319453/122/carlton.gif?1450319453'
+	}, {
+	  id: 31,
+	  name: ':darth_vader:',
+	  image: 'https://emojis.slackmojis.com/emojis/images/1450319458/131/darth_vader.png?1450319458'
+	}, {
+	  id: 32,
+	  name: ':challenge_accepted:',
+	  image: 'https://emojis.slackmojis.com/emojis/images/1463601502/415/challenge_accepted.jpg?1463601502'
+	}, {
+	  id: 33,
+	  name: ':epic_win:',
+	  image: 'https://emojis.slackmojis.com/emojis/images/1463602516/440/epic_win.png?1463602516'
+	}, {
+	  id: 34,
+	  name: ':not_sure:',
+	  image: 'https://emojis.slackmojis.com/emojis/images/1463602283/435/not_sure.jpg?1463602283'
+	}, {
+	  id: 35,
+	  name: ':troll:',
+	  image: 'https://emojis.slackmojis.com/emojis/images/1463602125/429/troll.png?1463602125'
+	}, {
+	  id: 36,
+	  name: ':y_u_no:',
+	  image: 'https://emojis.slackmojis.com/emojis/images/1463602086/428/y_u_no.png?1463602086'
+	}, {
+	  id: 37,
+	  name: ':bluesteel:',
+	  image: 'https://emoji.slack-edge.com/T024FPYBQ/bluesteel/3302898b8e5b3424.png'
+	}, {
+	  id: 38,
+	  name: ':david-swirl:',
+	  image: 'https://emoji.slack-edge.com/T024FPYBQ/david-swirl/18ad91d6e8c38bde.gif'
+	}, {
+	  id: 39,
+	  name: ':gabriel-swirl:',
+	  image: 'https://emoji.slack-edge.com/T024FPYBQ/gabriel-swirl/5e527af175a09f3d.gif'
+	}, {
+	  id: 40,
+	  name: ':joe-swirl:',
+	  image: 'https://emoji.slack-edge.com/T024FPYBQ/joe-swirl/a7cf2867d62eb300.gif'
 	}];
 
 	exports.default = emojis;
