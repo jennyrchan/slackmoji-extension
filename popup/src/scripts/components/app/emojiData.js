@@ -77,7 +77,7 @@ const emojis = [{
 }, {
   id: 20,
   name: ':pizzaspin:',
-  image: 'http://emojis.slackmojis.com/emojis/images/1467915398/645/pizzaspin.gif?1467915398'
+  image: 'https://emojis.slackmojis.com/emojis/images/1467915398/645/pizzaspin.gif?1467915398'
 }, {
   id: 21,
   name: ':millhouse:',
